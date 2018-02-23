@@ -1,8 +1,5 @@
 class TodosController < ApplicationController
   before_action :authenticate_user!
-  def index
-    @todos = Todo.all.order('Created_at DESC')
-  end
   
   def index
     @todos = Todo.all

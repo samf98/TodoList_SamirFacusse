@@ -2,9 +2,12 @@
 
 <ul>
 	<% @todos.each do |todo| %>
-	<li><%= link_to todo.category.name, todo_path(todo)%></li>
+	<h2><%= link_to todo.category.name, todo_path(todo)%></h2>
+	<li><%=todo.description%></li>
+	<li><%= todo.level %></li>
 	<%end%>
 </ul>
 
 <hr>
 <%= link_to "New Todo", new_todo_path %>
+<%= link_to "Home", return_home_path %>
