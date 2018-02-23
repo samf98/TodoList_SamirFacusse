@@ -10,6 +10,7 @@ class TodosController < ApplicationController
     @todo = Todo.new
   def edit
     @todo = Todo.find(params[:id])
+    render :edit
   end
   
   def update

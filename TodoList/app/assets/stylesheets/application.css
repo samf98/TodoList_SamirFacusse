@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-repeat: no-repeat;¿
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* Main */
+.main {
+  color: #fff;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 80px;
+  font-weight: 300;;
+}
+
+.main p {
+  font-size: 30px;
+}
+
+/* Add a black background color to the top navigation */
+.NavBar {
+    background-color: rebeccapurple;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.NavBar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: rigth;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.NavBar a:hover {
+    background-color: #333;
+    color: black;
+}

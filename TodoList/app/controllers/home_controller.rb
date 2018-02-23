@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
-	def return
-		redirect_to return_path
-	end
+	before_action :authenticate_user!
+
+	def index
+    @todos = Todo.all
+  end
 end
