@@ -1,0 +1,6 @@
+<h1><%= @todo.category.name %></h1>
+<h2><%= @todo.description %></h2>
+<h3><%= @todo.level %></h3>
+
+<p><%= link_to "Edit", edit_todo_path(@todo) %></p>
+<p><%= link_to "Delete", todo_path(@todo), :data => {:confirm => "You sure?", :method => "delete"} %></p>
